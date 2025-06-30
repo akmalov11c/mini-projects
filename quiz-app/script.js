@@ -106,6 +106,8 @@ const quizData = [
   },
 ];
 
+//fix
+
 let currentQuestionIndex = 0;
 let score = 0;
 let answerDisabled = false;
