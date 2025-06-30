@@ -1,0 +1,28 @@
+name: Deploy GitHub Pages from /quiz-app
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: quiz-app
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
