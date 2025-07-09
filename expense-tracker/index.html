@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <div class="balance__container">
+        <h2>Your Balance</h2>
+        <h1 id="balance">$0.00</h1>
+
+        <div class="summary">
+          <div class="income">
+            <h3>Income</h3>
+            <p id="income-amount">+$0.00</p>
+          </div>
+          <div class="expenses">
+            <h3>Expense</h3>
+            <p id="expense-amount">-$0.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__content">
+        <div class="transaction__container">
+          <h2>Transaction History</h2>
+          <ul id="transaction__list">
+            <li class="transaction income">test</li>
+            <li class="transaction expenses">test</li>
+          </ul>
+        </div>
+        <div class="form__container">
+          <h2>Add New Transaction</h2>
+          <form id="transaction-form">
+            <div class="form__group">
+              <label for="description"> Description </label>
+              <input
+                type="text"
+                id="description"
+                placeholder="Enter description"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="amount"> Amount </label>
+              <input
+                type="number"
+                id="amount"
+                placeholder="Enter amount"
+                required
+              />
+              <small>Use negative numbers (-) for expenses</small>
+            </div>
+            <button type="submit">Add Transaction</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
