@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="registration-form">
+        <h1>Register</h1>
+
+        <!-- Username -->
+        <div class="form__group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+          />
+          <small class="form__error" id="username-error"></small>
+        </div>
+
+        <!-- Email -->
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <small class="form__error" id="email-error"></small>
+        </div>
+
+        <!-- Password -->
+        <div class="form__group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <small class="form__error" id="password-error"></small>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form__group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm your password"
+          />
+          <small class="form__error" id="confirm-password-error"></small>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-button">Register</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
